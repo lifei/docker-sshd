@@ -12,3 +12,4 @@ RUN mkdir -p /var/run/fail2ban /etc/service/fail2ban
 ADD fail2ban-supervisor.sh /etc/service/fail2ban/run
 COPY fail2ban/* /etc/fail2ban/
 RUN rm -f /etc/service/sshd/down
+VOLUME /home
